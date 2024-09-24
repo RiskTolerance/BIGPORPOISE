@@ -1,7 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+@font-face {
+  font-family: "Abril Fatface";
+  font-weight: 400;
+  font-style: normal;
+  src: url("$lib/assets/fonts/AbrilFatface-Regular.ttf");
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
