@@ -8,6 +8,6 @@
 	export { className as class };
 </script>
 
-<div class={cn("p-6 pt-0", className)} {...$$restProps}>
+<div class={cn("py-2 px-4 w-full light-gradient", className)} {...$$restProps}>
 	<slot />
 </div>

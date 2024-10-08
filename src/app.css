@@ -9,6 +9,13 @@
   src: url("$lib/assets/fonts/AbrilFatface-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Britannic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("$lib/assets/fonts/Britannic-Bold-Regular.ttf");
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -82,4 +89,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.dark-gradient {
+  background: radial-gradient(circle at bottom, #003566, #000814);
+}
+
+.light-gradient {
+  background: linear-gradient(90deg, #296EB4, #ffffff)
 }

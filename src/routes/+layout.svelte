@@ -8,9 +8,9 @@
 </script>
 
 <ModeWatcher />
-<div class="flex min-h-screen flex-col justify-start bg-slate-100 dark:bg-slate-500">
-	<nav class="bg-slate-300 dark:bg-slate-800 dark:text-slate-100">
-		<div class="container mx-auto flex h-24 items-center justify-end">
+<div class="flex min-h-screen flex-col justify-start bg-slate-100 dark:bg-slate-500 max-h-screen overflow-clip relative">
+	<nav class=" dark:text-slate-100 absolute top-0 left-0 w-full">
+		<div class="container mx-auto flex items-center justify-end">
 			<ul class="flex items-center gap-4 font-serif text-2xl leading-none">
 				<li><a href="/">BIG</a></li>
 				<span>⋅</span>
@@ -28,15 +28,12 @@
 		</div>
 	</nav>
 
-	<div class="px-8">
+	<div class="px-8 h-screen dark-gradient">
 		<div class="container mx-auto">
 			<slot></slot>
 		</div>
 	</div>
-
-	<footer class="flex px-8 bg-slate-300 dark:bg-slate-800 dark:text-slate-100">
-		<div class="container">
-			<p>FOOTER</p>
-		</div>
+	<footer class="absolute bottom-0 left-0 w-full flex justify-center opacity-80 mix-blend-overlay">
+			<h1 class="font-serif text-[200px] leading-none">BIG PORPOISE</h1>
 	</footer>
 </div>
